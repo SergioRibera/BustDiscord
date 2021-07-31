@@ -1,0 +1,25 @@
+[package]
+name = "bustdiscord"
+version = "0.1.0"
+description = "An example Tauri Application with a splashscreen"
+edition = "2018"
+license = "Apache-2.0 OR MIT"
+authors = [ "SergioRibera" ]
+repository = ""
+build = "src/build.rs"
+
+[build-dependencies]
+tauri-build = { version = "1.0.0-beta.1" }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.0.0-beta.2", features = ["api-all"] }
+
+[target."cfg(windows)".build-dependencies]
+winres = "0.1"
+
+[features]
+default = [ "custom-protocol" ]
+custom-protocol = [ "tauri/custom-protocol" ]
+ui = []
