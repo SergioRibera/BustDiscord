@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Categories=Network;InstantMessaging;
+Exec=com-sergioribera-bustdiscord
+Icon=com-sergioribera-bustdiscord
+Name=BustDiscord
+GenericName=Internet Messenger
+StartupWMClass=bustdiscord
+StartupNotify=true
+Terminal=false
+Type=Application

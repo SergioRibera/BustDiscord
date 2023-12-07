@@ -1,0 +1,27 @@
+{
+    "tauri": {
+        "bundle": {
+            "icon": [
+                "icons/icon.icns"
+            ],
+            "identifier": "com.sergioribera.bustdiscord",
+            "active": true,
+            "category": "DeveloperTool",
+            "copyright": "",
+            "externalBin": [],
+            "longDescription": "",
+            "macOS": {
+                "entitlements": null,
+                "exceptionDomain": "",
+                "frameworks": [],
+                "providerShortName": null,
+                "signingIdentity": null
+            },
+            "resources": [],
+            "shortDescription": "",
+            "targets": [
+                "dmg"
+            ]
+        }
+    }
+}

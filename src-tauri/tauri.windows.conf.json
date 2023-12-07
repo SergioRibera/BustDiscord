@@ -1,0 +1,33 @@
+{
+    "tauri": {
+        "bundle": {
+            "icon": [
+                "icons/icon.ico"
+            ],
+            "identifier": "com.sergioribera.bustdiscord",
+            "active": true,
+            "category": "DeveloperTool",
+            "copyright": "",
+            "externalBin": [],
+            "longDescription": "",
+            "resources": [
+                "icons/icon.ico"
+            ],
+            "shortDescription": "",
+            "targets": [
+                "msi"
+            ],
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": "",
+                "wix": {
+                    "language": [
+                        "en-US"
+                    ],
+                    "template": "assets/main.wxs"
+                }
+            }
+        }
+    }
+}

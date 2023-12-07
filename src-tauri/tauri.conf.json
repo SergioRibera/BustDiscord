@@ -1,46 +1,28 @@
 {
-  "build": {
-    "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": true
-  },
-  "package": {
-    "productName": "BustDiscord2",
-    "version": "0.0.0"
-  },
-  "tauri": {
-    "allowlist": {
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
-      }
+    "package": {
+        "productName": "BustDiscord",
+        "version": "0.0.0"
     },
-    "bundle": {
-      "active": true,
-      "targets": "all",
-      "identifier": "com.tauri.dev",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ]
+    "tauri": {
+        "security": {
+            "csp": null
+        },
+        "updater": {
+            "active": false
+        },
+        "systemTray": {
+            "iconPath": "icons/128x128.png",
+            "iconAsTemplate": true
+        },
+        "allowlist": {
+            "all": true
+        }
     },
-    "security": {
-      "csp": null
-    },
-    "windows": [
-      {
-        "fullscreen": false,
-        "resizable": true,
-        "title": "BustDiscord2",
-        "width": 800,
-        "height": 600
-      }
-    ]
-  }
+    "build": {
+        "withGlobalTauri": true,
+        "devPath": "../src",
+        "distDir": "../src",
+        "beforeBuildCommand": "",
+        "beforeDevCommand": ""
+    }
 }

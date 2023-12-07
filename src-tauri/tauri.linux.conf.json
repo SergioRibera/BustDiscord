@@ -1,0 +1,27 @@
+{
+    "tauri": {
+        "bundle": {
+            "icon": [
+                "icons/128x128.png"
+            ],
+            "identifier": "com.sergioribera.bustdiscord",
+            "active": true,
+            "category": "DeveloperTool",
+            "copyright": "",
+            "deb": {
+                "depends": [],
+                "files": {
+                    "/usr/share/applications/bustdiscord.desktop": "assets/bustdiscord.desktop"
+                }
+            },
+            "externalBin": [],
+            "longDescription": "",
+            "resources": [],
+            "shortDescription": "",
+            "targets": [
+                "deb",
+                "appimage"
+            ]
+        }
+    }
+}
